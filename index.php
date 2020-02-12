@@ -1,10 +1,10 @@
 <?php
 
 use App\Solver;
-use App\Problems\DiagonalDifference\DiagonalDifference;
+use App\SockMerchant\SockMerchant;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$solver = new Solver(DiagonalDifference::make());
+$solver = new Solver(SockMerchant::make());
 
 echo $solver->solve() . "\r\n";
