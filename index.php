@@ -1,10 +1,10 @@
 <?php
 
 use App\Solver;
-use App\SockMerchant\SockMerchant;
+use App\CountingValleys\CountingValleys;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$solver = new Solver(SockMerchant::make());
+$solver = new Solver(CountingValleys::make());
 
 echo $solver->solve() . "\r\n";
