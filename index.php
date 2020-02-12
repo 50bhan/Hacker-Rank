@@ -1,10 +1,10 @@
 <?php
 
 use App\Solver;
-use App\ArrayLeftRotation\ArrayLeftRotation;
+use App\BinaryNumbers\BinaryNumbers;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$solver = new Solver(ArrayLeftRotation::make());
+$solver = new Solver(BinaryNumbers::make());
 
 echo $solver->solve() . "\r\n";
