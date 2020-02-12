@@ -1,10 +1,10 @@
 <?php
 
 use App\Solver;
-use App\BinaryNumbers\BinaryNumbers;
+use App\Staircase\Staircase;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$solver = new Solver(BinaryNumbers::make());
+$solver = new Solver(Staircase::make());
 
 echo $solver->solve() . "\r\n";
