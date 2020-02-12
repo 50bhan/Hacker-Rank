@@ -6,10 +6,10 @@ use App\Contracts\ProblemAbstract;
 
 class DiagonalDifference extends ProblemAbstract
 {
-    private function diagonalDifference($arr): int
+    private function diagonalDifference($arr, $n): int
     {
-        $n      = count($arr) - 1;
         $result = 0;
+        --$n;
 
         for ($i = 0; $i <= $n; $i++) {
             $result += $arr[$i][$i];
@@ -21,6 +21,8 @@ class DiagonalDifference extends ProblemAbstract
 
     public function solve(): int
     {
-        return $this->diagonalDifference(readInputFile()['arrayData']);
+        [$n, $arr] = readInputFile();
+
+        return $this->diagonalDifference($arr, $n);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('dd')) {
+if (! function_exists('dd')) {
     function dd($output)
     {
         var_dump($output);
@@ -8,7 +8,7 @@ if (!function_exists('dd')) {
     }
 }
 
-if (!function_exists('readInputFile')) {
+if (! function_exists('readInputFile')) {
     function readInputFile()
     {
         $path = realpath(dirname(debug_backtrace()[0]['file'])) . '/input.txt';
@@ -25,9 +25,6 @@ if (!function_exists('readInputFile')) {
 
         fclose($fptr);
 
-        return [
-            'arrayCount' => $n,
-            'arrayData'  => $arr
-        ];
+        return [$n, $arr];
     }
 }
