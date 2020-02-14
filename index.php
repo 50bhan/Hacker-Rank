@@ -1,10 +1,10 @@
 <?php
 
 use App\Solver;
-use App\TwoDimensionArray\TwoDimensionArray;
+use App\RepeatedString\RepeatedString;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$solver = new Solver(TwoDimensionArray::make());
+$solver = new Solver(RepeatedString::make());
 
 echo $solver->solve() . "\r\n";
