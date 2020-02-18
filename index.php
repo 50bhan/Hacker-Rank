@@ -1,10 +1,10 @@
 <?php
 
 use App\Solver;
-use App\JumpingOnTheClouds\JumpingOnTheClouds;
+use App\DictionariesAndMaps\DictionariesAndMaps;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$solver = new Solver(JumpingOnTheClouds::make());
+$solver = new Solver(DictionariesAndMaps::make());
 
 echo $solver->solve() . "\r\n";
